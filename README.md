@@ -1,0 +1,1 @@
+# namsor-javascript-sdk2
