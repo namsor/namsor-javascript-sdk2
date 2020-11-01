@@ -91,29 +91,27 @@ module: {
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var NamSorApiV2 = require('nam_sor_api_v2');
 
+var NamSorApiV2 = require('@namsor/nam_sor_api_v2');
 var defaultClient = NamSorApiV2.ApiClient.instance;
-
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
-api_key.apiKey = "YOUR API KEY"
+api_key.apiKey = '4f9058359cc1d28309850f5962294b3e';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//api_key.apiKeyPrefix['X-API-KEY'] = "Token"
+//api_key.apiKeyPrefix = 'Token';
 
-var api = new NamSorApiV2.AdminApi()
-var apiKey = "apiKey_example"; // {String} 
-var usageCredits = 789; // {Number} 
-var userMessage = "userMessage_example"; // {String} 
-
+var apiInstance = new NamSorApiV2.PersonalApi();
+var firstName = "John"; // String | 
+var lastName = "Smith"; // String | 
+var countryIso2 = "GB"; // String | 
 var callback = function(error, data, response) {
   if (error) {
     console.error(error);
   } else {
-    console.log('API called successfully. Returned data: ' + data);
+    console.log('API called successfully. Returned data: ' + JSON.stringify(data));
   }
 };
-api.addCredits(apiKey, usageCredits, userMessage, callback);
+apiInstance.genderGeo(firstName, lastName, countryIso2, callback);
 
 ```
 
