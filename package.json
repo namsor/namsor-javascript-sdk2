@@ -1,26 +1,12 @@
 {
-  "name": "@namsor/nam_sor_api_v2",
+  "name": "nam_sor_api_v2",
   "version": "2.0.11",
-  "description": "NamSor API v2 : enpoints to process personal names (gender, cultural origin or ethnicity) in all alphabets or languages.",
-  "license": "AGPL-3.0-or-later",
-  "main": "src/com.namsor.sdk2.invoke/index.js",
+  "description": "NamSor_API_v2__enpoints_to_process_personal_names__gender_cultural_origin_or_ethnicity_in_all_alphabets_or_languages__Use_GET_methods_for_small_tests_but_prefer_POST_methods_for_higher_throughput__batch_processing_of_up_to_100_names_at_a_time__Need_something_you_cant_find_here_We_have_many_more_features_coming_soon__Let_us_know_well_do_our_best_to_add_it_",
+  "license": "NamSorAPI_Lic_v0.0.7",
+  "main": "src/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/namsor/namsor-javascript-sdk2.git"
-  },
-  "keywords": [
-    "gender classification",
-    "ethnicity classification",
-    "name classification",
-    "gender",
-    "ethnicity",
-    "onomastics",
-    "openapi"
-  ],
-  "author": "NamSor <contact@namsor.com> (http://example.com)",
   "browser": {
     "fs": false
   },
@@ -29,15 +15,7 @@
   },
   "devDependencies": {
     "expect.js": "~0.3.1",
-    "mocha": "^8.2.0",
+    "mocha": "^5.2.0",
     "sinon": "1.17.3"
-  },
-  "homepage": "https://github.com/namsor/namsor-javascript-sdk2",
-  "bugs": {
-    "url": "https://github.com/namsor/namsor-javascript-sdk2/issues"
-  },
-  "directories": {
-    "doc": "docs",
-    "test": "test"
   }
 }

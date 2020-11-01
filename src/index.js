@@ -17,10 +17,10 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['com.namsor.sdk2.invoke/ApiClient', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIBillingPeriodUsageOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIClassifierOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIClassifierTaxonomyOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIClassifiersStatusOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APICounterV2Out', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIKeyOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIPeriodUsageOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIPlanOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIPlanSubscriptionOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIPlansOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIServiceOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIServicesOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIUsageAggregatedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameDiasporaedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameGenderIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameGenderedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameGeoIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameGeoZippedIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameOriginedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNamePhoneCodedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNamePhoneNumberGeoIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNamePhoneNumberIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameUSRaceEthnicityOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchMatchPersonalFirstLastNameIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchNameMatchCandidatesOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchNameMatchedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchParsedFullNameGeoIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchParsedFullNameIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchPersonalNameGenderedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchPersonalNameGeoIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchPersonalNameGeoOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchPersonalNameIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchPersonalNameParsedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BillingHistoryOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/BillingInfoInOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/CacheMetricsOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/ClassifierMetricsOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/CurrenciesOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/DeployUIOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/ExpectedClassMetricsOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FeedbackLoopOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameDiasporaedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameGenderIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameGenderedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameGeoIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameGeoZippedIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameOriginedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNamePhoneCodedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNamePhoneNumberGeoIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNamePhoneNumberIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameUSRaceEthnicityOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/InlineObject', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/InvoiceItemOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/InvoiceOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/MatchPersonalFirstLastNameIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/NamSorCounterOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/NameMatchCandidateOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/NameMatchCandidatesOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/NameMatchedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/ParsedFullNameGeoIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/ParsedFullNameIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/PersonalNameGenderedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/PersonalNameGeoIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/PersonalNameGeoOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/PersonalNameIn', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/PersonalNameParsedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/ProperNounCategorizedOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/RomanizedNameOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/SoftwareVersionOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/SourceDetailedMetricsOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/SourceMetricsOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/StripeCardOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/StripeCustomerOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/SystemMetricsOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.model/UserInfoOut', 'com.namsor.sdk2.invoke/com.namsor.sdk2.api/AdminApi', 'com.namsor.sdk2.invoke/com.namsor.sdk2.api/ChineseApi', 'com.namsor.sdk2.invoke/com.namsor.sdk2.api/GeneralApi', 'com.namsor.sdk2.invoke/com.namsor.sdk2.api/JapaneseApi', 'com.namsor.sdk2.invoke/com.namsor.sdk2.api/PersonalApi', 'com.namsor.sdk2.invoke/com.namsor.sdk2.api/SocialApi'], factory);
+    define(['ApiClient', 'model/APIBillingPeriodUsageOut', 'model/APIClassifierOut', 'model/APIClassifierTaxonomyOut', 'model/APIClassifiersStatusOut', 'model/APICounterV2Out', 'model/APIKeyOut', 'model/APIPeriodUsageOut', 'model/APIPlanOut', 'model/APIPlanSubscriptionOut', 'model/APIPlansOut', 'model/APIServiceOut', 'model/APIServicesOut', 'model/APIUsageAggregatedOut', 'model/BatchFirstLastNameDiasporaedOut', 'model/BatchFirstLastNameGenderIn', 'model/BatchFirstLastNameGenderedOut', 'model/BatchFirstLastNameGeoIn', 'model/BatchFirstLastNameGeoZippedIn', 'model/BatchFirstLastNameIn', 'model/BatchFirstLastNameOriginedOut', 'model/BatchFirstLastNamePhoneCodedOut', 'model/BatchFirstLastNamePhoneNumberGeoIn', 'model/BatchFirstLastNamePhoneNumberIn', 'model/BatchFirstLastNameUSRaceEthnicityOut', 'model/BatchMatchPersonalFirstLastNameIn', 'model/BatchNameMatchCandidatesOut', 'model/BatchNameMatchedOut', 'model/BatchParsedFullNameGeoIn', 'model/BatchParsedFullNameIn', 'model/BatchPersonalNameGenderedOut', 'model/BatchPersonalNameGeoIn', 'model/BatchPersonalNameGeoOut', 'model/BatchPersonalNameIn', 'model/BatchPersonalNameParsedOut', 'model/BillingHistoryOut', 'model/BillingInfoInOut', 'model/CacheMetricsOut', 'model/ClassifierMetricsOut', 'model/CurrenciesOut', 'model/DeployUIOut', 'model/ExpectedClassMetricsOut', 'model/FeedbackLoopOut', 'model/FirstLastNameDiasporaedOut', 'model/FirstLastNameGenderIn', 'model/FirstLastNameGenderedOut', 'model/FirstLastNameGeoIn', 'model/FirstLastNameGeoZippedIn', 'model/FirstLastNameIn', 'model/FirstLastNameOriginedOut', 'model/FirstLastNameOut', 'model/FirstLastNamePhoneCodedOut', 'model/FirstLastNamePhoneNumberGeoIn', 'model/FirstLastNamePhoneNumberIn', 'model/FirstLastNameUSRaceEthnicityOut', 'model/InlineObject', 'model/InvoiceItemOut', 'model/InvoiceOut', 'model/MatchPersonalFirstLastNameIn', 'model/NamSorCounterOut', 'model/NameMatchCandidateOut', 'model/NameMatchCandidatesOut', 'model/NameMatchedOut', 'model/ParsedFullNameGeoIn', 'model/ParsedFullNameIn', 'model/PersonalNameGenderedOut', 'model/PersonalNameGeoIn', 'model/PersonalNameGeoOut', 'model/PersonalNameIn', 'model/PersonalNameParsedOut', 'model/ProperNounCategorizedOut', 'model/RomanizedNameOut', 'model/SoftwareVersionOut', 'model/SourceDetailedMetricsOut', 'model/SourceMetricsOut', 'model/StripeCardOut', 'model/StripeCustomerOut', 'model/SystemMetricsOut', 'model/UserInfoOut', 'api/AdminApi', 'api/ChineseApi', 'api/GeneralApi', 'api/JapaneseApi', 'api/PersonalApi', 'api/SocialApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./com.namsor.sdk2.model/APIBillingPeriodUsageOut'), require('./com.namsor.sdk2.model/APIClassifierOut'), require('./com.namsor.sdk2.model/APIClassifierTaxonomyOut'), require('./com.namsor.sdk2.model/APIClassifiersStatusOut'), require('./com.namsor.sdk2.model/APICounterV2Out'), require('./com.namsor.sdk2.model/APIKeyOut'), require('./com.namsor.sdk2.model/APIPeriodUsageOut'), require('./com.namsor.sdk2.model/APIPlanOut'), require('./com.namsor.sdk2.model/APIPlanSubscriptionOut'), require('./com.namsor.sdk2.model/APIPlansOut'), require('./com.namsor.sdk2.model/APIServiceOut'), require('./com.namsor.sdk2.model/APIServicesOut'), require('./com.namsor.sdk2.model/APIUsageAggregatedOut'), require('./com.namsor.sdk2.model/BatchFirstLastNameDiasporaedOut'), require('./com.namsor.sdk2.model/BatchFirstLastNameGenderIn'), require('./com.namsor.sdk2.model/BatchFirstLastNameGenderedOut'), require('./com.namsor.sdk2.model/BatchFirstLastNameGeoIn'), require('./com.namsor.sdk2.model/BatchFirstLastNameGeoZippedIn'), require('./com.namsor.sdk2.model/BatchFirstLastNameIn'), require('./com.namsor.sdk2.model/BatchFirstLastNameOriginedOut'), require('./com.namsor.sdk2.model/BatchFirstLastNamePhoneCodedOut'), require('./com.namsor.sdk2.model/BatchFirstLastNamePhoneNumberGeoIn'), require('./com.namsor.sdk2.model/BatchFirstLastNamePhoneNumberIn'), require('./com.namsor.sdk2.model/BatchFirstLastNameUSRaceEthnicityOut'), require('./com.namsor.sdk2.model/BatchMatchPersonalFirstLastNameIn'), require('./com.namsor.sdk2.model/BatchNameMatchCandidatesOut'), require('./com.namsor.sdk2.model/BatchNameMatchedOut'), require('./com.namsor.sdk2.model/BatchParsedFullNameGeoIn'), require('./com.namsor.sdk2.model/BatchParsedFullNameIn'), require('./com.namsor.sdk2.model/BatchPersonalNameGenderedOut'), require('./com.namsor.sdk2.model/BatchPersonalNameGeoIn'), require('./com.namsor.sdk2.model/BatchPersonalNameGeoOut'), require('./com.namsor.sdk2.model/BatchPersonalNameIn'), require('./com.namsor.sdk2.model/BatchPersonalNameParsedOut'), require('./com.namsor.sdk2.model/BillingHistoryOut'), require('./com.namsor.sdk2.model/BillingInfoInOut'), require('./com.namsor.sdk2.model/CacheMetricsOut'), require('./com.namsor.sdk2.model/ClassifierMetricsOut'), require('./com.namsor.sdk2.model/CurrenciesOut'), require('./com.namsor.sdk2.model/DeployUIOut'), require('./com.namsor.sdk2.model/ExpectedClassMetricsOut'), require('./com.namsor.sdk2.model/FeedbackLoopOut'), require('./com.namsor.sdk2.model/FirstLastNameDiasporaedOut'), require('./com.namsor.sdk2.model/FirstLastNameGenderIn'), require('./com.namsor.sdk2.model/FirstLastNameGenderedOut'), require('./com.namsor.sdk2.model/FirstLastNameGeoIn'), require('./com.namsor.sdk2.model/FirstLastNameGeoZippedIn'), require('./com.namsor.sdk2.model/FirstLastNameIn'), require('./com.namsor.sdk2.model/FirstLastNameOriginedOut'), require('./com.namsor.sdk2.model/FirstLastNameOut'), require('./com.namsor.sdk2.model/FirstLastNamePhoneCodedOut'), require('./com.namsor.sdk2.model/FirstLastNamePhoneNumberGeoIn'), require('./com.namsor.sdk2.model/FirstLastNamePhoneNumberIn'), require('./com.namsor.sdk2.model/FirstLastNameUSRaceEthnicityOut'), require('./com.namsor.sdk2.model/InlineObject'), require('./com.namsor.sdk2.model/InvoiceItemOut'), require('./com.namsor.sdk2.model/InvoiceOut'), require('./com.namsor.sdk2.model/MatchPersonalFirstLastNameIn'), require('./com.namsor.sdk2.model/NamSorCounterOut'), require('./com.namsor.sdk2.model/NameMatchCandidateOut'), require('./com.namsor.sdk2.model/NameMatchCandidatesOut'), require('./com.namsor.sdk2.model/NameMatchedOut'), require('./com.namsor.sdk2.model/ParsedFullNameGeoIn'), require('./com.namsor.sdk2.model/ParsedFullNameIn'), require('./com.namsor.sdk2.model/PersonalNameGenderedOut'), require('./com.namsor.sdk2.model/PersonalNameGeoIn'), require('./com.namsor.sdk2.model/PersonalNameGeoOut'), require('./com.namsor.sdk2.model/PersonalNameIn'), require('./com.namsor.sdk2.model/PersonalNameParsedOut'), require('./com.namsor.sdk2.model/ProperNounCategorizedOut'), require('./com.namsor.sdk2.model/RomanizedNameOut'), require('./com.namsor.sdk2.model/SoftwareVersionOut'), require('./com.namsor.sdk2.model/SourceDetailedMetricsOut'), require('./com.namsor.sdk2.model/SourceMetricsOut'), require('./com.namsor.sdk2.model/StripeCardOut'), require('./com.namsor.sdk2.model/StripeCustomerOut'), require('./com.namsor.sdk2.model/SystemMetricsOut'), require('./com.namsor.sdk2.model/UserInfoOut'), require('./com.namsor.sdk2.api/AdminApi'), require('./com.namsor.sdk2.api/ChineseApi'), require('./com.namsor.sdk2.api/GeneralApi'), require('./com.namsor.sdk2.api/JapaneseApi'), require('./com.namsor.sdk2.api/PersonalApi'), require('./com.namsor.sdk2.api/SocialApi'));
+    module.exports = factory(require('./ApiClient'), require('./model/APIBillingPeriodUsageOut'), require('./model/APIClassifierOut'), require('./model/APIClassifierTaxonomyOut'), require('./model/APIClassifiersStatusOut'), require('./model/APICounterV2Out'), require('./model/APIKeyOut'), require('./model/APIPeriodUsageOut'), require('./model/APIPlanOut'), require('./model/APIPlanSubscriptionOut'), require('./model/APIPlansOut'), require('./model/APIServiceOut'), require('./model/APIServicesOut'), require('./model/APIUsageAggregatedOut'), require('./model/BatchFirstLastNameDiasporaedOut'), require('./model/BatchFirstLastNameGenderIn'), require('./model/BatchFirstLastNameGenderedOut'), require('./model/BatchFirstLastNameGeoIn'), require('./model/BatchFirstLastNameGeoZippedIn'), require('./model/BatchFirstLastNameIn'), require('./model/BatchFirstLastNameOriginedOut'), require('./model/BatchFirstLastNamePhoneCodedOut'), require('./model/BatchFirstLastNamePhoneNumberGeoIn'), require('./model/BatchFirstLastNamePhoneNumberIn'), require('./model/BatchFirstLastNameUSRaceEthnicityOut'), require('./model/BatchMatchPersonalFirstLastNameIn'), require('./model/BatchNameMatchCandidatesOut'), require('./model/BatchNameMatchedOut'), require('./model/BatchParsedFullNameGeoIn'), require('./model/BatchParsedFullNameIn'), require('./model/BatchPersonalNameGenderedOut'), require('./model/BatchPersonalNameGeoIn'), require('./model/BatchPersonalNameGeoOut'), require('./model/BatchPersonalNameIn'), require('./model/BatchPersonalNameParsedOut'), require('./model/BillingHistoryOut'), require('./model/BillingInfoInOut'), require('./model/CacheMetricsOut'), require('./model/ClassifierMetricsOut'), require('./model/CurrenciesOut'), require('./model/DeployUIOut'), require('./model/ExpectedClassMetricsOut'), require('./model/FeedbackLoopOut'), require('./model/FirstLastNameDiasporaedOut'), require('./model/FirstLastNameGenderIn'), require('./model/FirstLastNameGenderedOut'), require('./model/FirstLastNameGeoIn'), require('./model/FirstLastNameGeoZippedIn'), require('./model/FirstLastNameIn'), require('./model/FirstLastNameOriginedOut'), require('./model/FirstLastNameOut'), require('./model/FirstLastNamePhoneCodedOut'), require('./model/FirstLastNamePhoneNumberGeoIn'), require('./model/FirstLastNamePhoneNumberIn'), require('./model/FirstLastNameUSRaceEthnicityOut'), require('./model/InlineObject'), require('./model/InvoiceItemOut'), require('./model/InvoiceOut'), require('./model/MatchPersonalFirstLastNameIn'), require('./model/NamSorCounterOut'), require('./model/NameMatchCandidateOut'), require('./model/NameMatchCandidatesOut'), require('./model/NameMatchedOut'), require('./model/ParsedFullNameGeoIn'), require('./model/ParsedFullNameIn'), require('./model/PersonalNameGenderedOut'), require('./model/PersonalNameGeoIn'), require('./model/PersonalNameGeoOut'), require('./model/PersonalNameIn'), require('./model/PersonalNameParsedOut'), require('./model/ProperNounCategorizedOut'), require('./model/RomanizedNameOut'), require('./model/SoftwareVersionOut'), require('./model/SourceDetailedMetricsOut'), require('./model/SourceMetricsOut'), require('./model/StripeCardOut'), require('./model/StripeCustomerOut'), require('./model/SystemMetricsOut'), require('./model/UserInfoOut'), require('./api/AdminApi'), require('./api/ChineseApi'), require('./api/GeneralApi'), require('./api/JapaneseApi'), require('./api/PersonalApi'), require('./api/SocialApi'));
   }
 }(function(ApiClient, APIBillingPeriodUsageOut, APIClassifierOut, APIClassifierTaxonomyOut, APIClassifiersStatusOut, APICounterV2Out, APIKeyOut, APIPeriodUsageOut, APIPlanOut, APIPlanSubscriptionOut, APIPlansOut, APIServiceOut, APIServicesOut, APIUsageAggregatedOut, BatchFirstLastNameDiasporaedOut, BatchFirstLastNameGenderIn, BatchFirstLastNameGenderedOut, BatchFirstLastNameGeoIn, BatchFirstLastNameGeoZippedIn, BatchFirstLastNameIn, BatchFirstLastNameOriginedOut, BatchFirstLastNamePhoneCodedOut, BatchFirstLastNamePhoneNumberGeoIn, BatchFirstLastNamePhoneNumberIn, BatchFirstLastNameUSRaceEthnicityOut, BatchMatchPersonalFirstLastNameIn, BatchNameMatchCandidatesOut, BatchNameMatchedOut, BatchParsedFullNameGeoIn, BatchParsedFullNameIn, BatchPersonalNameGenderedOut, BatchPersonalNameGeoIn, BatchPersonalNameGeoOut, BatchPersonalNameIn, BatchPersonalNameParsedOut, BillingHistoryOut, BillingInfoInOut, CacheMetricsOut, ClassifierMetricsOut, CurrenciesOut, DeployUIOut, ExpectedClassMetricsOut, FeedbackLoopOut, FirstLastNameDiasporaedOut, FirstLastNameGenderIn, FirstLastNameGenderedOut, FirstLastNameGeoIn, FirstLastNameGeoZippedIn, FirstLastNameIn, FirstLastNameOriginedOut, FirstLastNameOut, FirstLastNamePhoneCodedOut, FirstLastNamePhoneNumberGeoIn, FirstLastNamePhoneNumberIn, FirstLastNameUSRaceEthnicityOut, InlineObject, InvoiceItemOut, InvoiceOut, MatchPersonalFirstLastNameIn, NamSorCounterOut, NameMatchCandidateOut, NameMatchCandidatesOut, NameMatchedOut, ParsedFullNameGeoIn, ParsedFullNameIn, PersonalNameGenderedOut, PersonalNameGeoIn, PersonalNameGeoOut, PersonalNameIn, PersonalNameParsedOut, ProperNounCategorizedOut, RomanizedNameOut, SoftwareVersionOut, SourceDetailedMetricsOut, SourceMetricsOut, StripeCardOut, StripeCustomerOut, SystemMetricsOut, UserInfoOut, AdminApi, ChineseApi, GeneralApi, JapaneseApi, PersonalApi, SocialApi) {
   'use strict';
@@ -31,7 +31,7 @@
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var NamSorApiV2 = require('com.namsor.sdk2.invoke/index'); // See note below*.
+   * var NamSorApiV2 = require('index'); // See note below*.
    * var xxxSvc = new NamSorApiV2.XxxApi(); // Allocate the API class we're going to use.
    * var yyyModel = new NamSorApiV2.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
@@ -39,7 +39,7 @@
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
    * ...
    * </pre>
-   * <em>*NOTE: For a top-level AMD script, use require(['com.namsor.sdk2.invoke/index'], function(){...})
+   * <em>*NOTE: For a top-level AMD script, use require(['index'], function(){...})
    * and put the application logic within the callback function.</em>
    * </p>
    * <p>
@@ -53,433 +53,433 @@
    * ...
    * </pre>
    * </p>
-   * @module com.namsor.sdk2.invoke/index
+   * @module index
    * @version 2.0.11
    */
   var exports = {
     /**
      * The ApiClient constructor.
-     * @property {module:com.namsor.sdk2.invoke/ApiClient}
+     * @property {module:ApiClient}
      */
     ApiClient: ApiClient,
     /**
      * The APIBillingPeriodUsageOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIBillingPeriodUsageOut}
+     * @property {module:model/APIBillingPeriodUsageOut}
      */
     APIBillingPeriodUsageOut: APIBillingPeriodUsageOut,
     /**
      * The APIClassifierOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIClassifierOut}
+     * @property {module:model/APIClassifierOut}
      */
     APIClassifierOut: APIClassifierOut,
     /**
      * The APIClassifierTaxonomyOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIClassifierTaxonomyOut}
+     * @property {module:model/APIClassifierTaxonomyOut}
      */
     APIClassifierTaxonomyOut: APIClassifierTaxonomyOut,
     /**
      * The APIClassifiersStatusOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIClassifiersStatusOut}
+     * @property {module:model/APIClassifiersStatusOut}
      */
     APIClassifiersStatusOut: APIClassifiersStatusOut,
     /**
      * The APICounterV2Out model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APICounterV2Out}
+     * @property {module:model/APICounterV2Out}
      */
     APICounterV2Out: APICounterV2Out,
     /**
      * The APIKeyOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIKeyOut}
+     * @property {module:model/APIKeyOut}
      */
     APIKeyOut: APIKeyOut,
     /**
      * The APIPeriodUsageOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIPeriodUsageOut}
+     * @property {module:model/APIPeriodUsageOut}
      */
     APIPeriodUsageOut: APIPeriodUsageOut,
     /**
      * The APIPlanOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIPlanOut}
+     * @property {module:model/APIPlanOut}
      */
     APIPlanOut: APIPlanOut,
     /**
      * The APIPlanSubscriptionOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIPlanSubscriptionOut}
+     * @property {module:model/APIPlanSubscriptionOut}
      */
     APIPlanSubscriptionOut: APIPlanSubscriptionOut,
     /**
      * The APIPlansOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIPlansOut}
+     * @property {module:model/APIPlansOut}
      */
     APIPlansOut: APIPlansOut,
     /**
      * The APIServiceOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIServiceOut}
+     * @property {module:model/APIServiceOut}
      */
     APIServiceOut: APIServiceOut,
     /**
      * The APIServicesOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIServicesOut}
+     * @property {module:model/APIServicesOut}
      */
     APIServicesOut: APIServicesOut,
     /**
      * The APIUsageAggregatedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/APIUsageAggregatedOut}
+     * @property {module:model/APIUsageAggregatedOut}
      */
     APIUsageAggregatedOut: APIUsageAggregatedOut,
     /**
      * The BatchFirstLastNameDiasporaedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameDiasporaedOut}
+     * @property {module:model/BatchFirstLastNameDiasporaedOut}
      */
     BatchFirstLastNameDiasporaedOut: BatchFirstLastNameDiasporaedOut,
     /**
      * The BatchFirstLastNameGenderIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameGenderIn}
+     * @property {module:model/BatchFirstLastNameGenderIn}
      */
     BatchFirstLastNameGenderIn: BatchFirstLastNameGenderIn,
     /**
      * The BatchFirstLastNameGenderedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameGenderedOut}
+     * @property {module:model/BatchFirstLastNameGenderedOut}
      */
     BatchFirstLastNameGenderedOut: BatchFirstLastNameGenderedOut,
     /**
      * The BatchFirstLastNameGeoIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameGeoIn}
+     * @property {module:model/BatchFirstLastNameGeoIn}
      */
     BatchFirstLastNameGeoIn: BatchFirstLastNameGeoIn,
     /**
      * The BatchFirstLastNameGeoZippedIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameGeoZippedIn}
+     * @property {module:model/BatchFirstLastNameGeoZippedIn}
      */
     BatchFirstLastNameGeoZippedIn: BatchFirstLastNameGeoZippedIn,
     /**
      * The BatchFirstLastNameIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameIn}
+     * @property {module:model/BatchFirstLastNameIn}
      */
     BatchFirstLastNameIn: BatchFirstLastNameIn,
     /**
      * The BatchFirstLastNameOriginedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameOriginedOut}
+     * @property {module:model/BatchFirstLastNameOriginedOut}
      */
     BatchFirstLastNameOriginedOut: BatchFirstLastNameOriginedOut,
     /**
      * The BatchFirstLastNamePhoneCodedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNamePhoneCodedOut}
+     * @property {module:model/BatchFirstLastNamePhoneCodedOut}
      */
     BatchFirstLastNamePhoneCodedOut: BatchFirstLastNamePhoneCodedOut,
     /**
      * The BatchFirstLastNamePhoneNumberGeoIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNamePhoneNumberGeoIn}
+     * @property {module:model/BatchFirstLastNamePhoneNumberGeoIn}
      */
     BatchFirstLastNamePhoneNumberGeoIn: BatchFirstLastNamePhoneNumberGeoIn,
     /**
      * The BatchFirstLastNamePhoneNumberIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNamePhoneNumberIn}
+     * @property {module:model/BatchFirstLastNamePhoneNumberIn}
      */
     BatchFirstLastNamePhoneNumberIn: BatchFirstLastNamePhoneNumberIn,
     /**
      * The BatchFirstLastNameUSRaceEthnicityOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchFirstLastNameUSRaceEthnicityOut}
+     * @property {module:model/BatchFirstLastNameUSRaceEthnicityOut}
      */
     BatchFirstLastNameUSRaceEthnicityOut: BatchFirstLastNameUSRaceEthnicityOut,
     /**
      * The BatchMatchPersonalFirstLastNameIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchMatchPersonalFirstLastNameIn}
+     * @property {module:model/BatchMatchPersonalFirstLastNameIn}
      */
     BatchMatchPersonalFirstLastNameIn: BatchMatchPersonalFirstLastNameIn,
     /**
      * The BatchNameMatchCandidatesOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchNameMatchCandidatesOut}
+     * @property {module:model/BatchNameMatchCandidatesOut}
      */
     BatchNameMatchCandidatesOut: BatchNameMatchCandidatesOut,
     /**
      * The BatchNameMatchedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchNameMatchedOut}
+     * @property {module:model/BatchNameMatchedOut}
      */
     BatchNameMatchedOut: BatchNameMatchedOut,
     /**
      * The BatchParsedFullNameGeoIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchParsedFullNameGeoIn}
+     * @property {module:model/BatchParsedFullNameGeoIn}
      */
     BatchParsedFullNameGeoIn: BatchParsedFullNameGeoIn,
     /**
      * The BatchParsedFullNameIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchParsedFullNameIn}
+     * @property {module:model/BatchParsedFullNameIn}
      */
     BatchParsedFullNameIn: BatchParsedFullNameIn,
     /**
      * The BatchPersonalNameGenderedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchPersonalNameGenderedOut}
+     * @property {module:model/BatchPersonalNameGenderedOut}
      */
     BatchPersonalNameGenderedOut: BatchPersonalNameGenderedOut,
     /**
      * The BatchPersonalNameGeoIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchPersonalNameGeoIn}
+     * @property {module:model/BatchPersonalNameGeoIn}
      */
     BatchPersonalNameGeoIn: BatchPersonalNameGeoIn,
     /**
      * The BatchPersonalNameGeoOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchPersonalNameGeoOut}
+     * @property {module:model/BatchPersonalNameGeoOut}
      */
     BatchPersonalNameGeoOut: BatchPersonalNameGeoOut,
     /**
      * The BatchPersonalNameIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchPersonalNameIn}
+     * @property {module:model/BatchPersonalNameIn}
      */
     BatchPersonalNameIn: BatchPersonalNameIn,
     /**
      * The BatchPersonalNameParsedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BatchPersonalNameParsedOut}
+     * @property {module:model/BatchPersonalNameParsedOut}
      */
     BatchPersonalNameParsedOut: BatchPersonalNameParsedOut,
     /**
      * The BillingHistoryOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BillingHistoryOut}
+     * @property {module:model/BillingHistoryOut}
      */
     BillingHistoryOut: BillingHistoryOut,
     /**
      * The BillingInfoInOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/BillingInfoInOut}
+     * @property {module:model/BillingInfoInOut}
      */
     BillingInfoInOut: BillingInfoInOut,
     /**
      * The CacheMetricsOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/CacheMetricsOut}
+     * @property {module:model/CacheMetricsOut}
      */
     CacheMetricsOut: CacheMetricsOut,
     /**
      * The ClassifierMetricsOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/ClassifierMetricsOut}
+     * @property {module:model/ClassifierMetricsOut}
      */
     ClassifierMetricsOut: ClassifierMetricsOut,
     /**
      * The CurrenciesOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/CurrenciesOut}
+     * @property {module:model/CurrenciesOut}
      */
     CurrenciesOut: CurrenciesOut,
     /**
      * The DeployUIOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/DeployUIOut}
+     * @property {module:model/DeployUIOut}
      */
     DeployUIOut: DeployUIOut,
     /**
      * The ExpectedClassMetricsOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/ExpectedClassMetricsOut}
+     * @property {module:model/ExpectedClassMetricsOut}
      */
     ExpectedClassMetricsOut: ExpectedClassMetricsOut,
     /**
      * The FeedbackLoopOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FeedbackLoopOut}
+     * @property {module:model/FeedbackLoopOut}
      */
     FeedbackLoopOut: FeedbackLoopOut,
     /**
      * The FirstLastNameDiasporaedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameDiasporaedOut}
+     * @property {module:model/FirstLastNameDiasporaedOut}
      */
     FirstLastNameDiasporaedOut: FirstLastNameDiasporaedOut,
     /**
      * The FirstLastNameGenderIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameGenderIn}
+     * @property {module:model/FirstLastNameGenderIn}
      */
     FirstLastNameGenderIn: FirstLastNameGenderIn,
     /**
      * The FirstLastNameGenderedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameGenderedOut}
+     * @property {module:model/FirstLastNameGenderedOut}
      */
     FirstLastNameGenderedOut: FirstLastNameGenderedOut,
     /**
      * The FirstLastNameGeoIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameGeoIn}
+     * @property {module:model/FirstLastNameGeoIn}
      */
     FirstLastNameGeoIn: FirstLastNameGeoIn,
     /**
      * The FirstLastNameGeoZippedIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameGeoZippedIn}
+     * @property {module:model/FirstLastNameGeoZippedIn}
      */
     FirstLastNameGeoZippedIn: FirstLastNameGeoZippedIn,
     /**
      * The FirstLastNameIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameIn}
+     * @property {module:model/FirstLastNameIn}
      */
     FirstLastNameIn: FirstLastNameIn,
     /**
      * The FirstLastNameOriginedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameOriginedOut}
+     * @property {module:model/FirstLastNameOriginedOut}
      */
     FirstLastNameOriginedOut: FirstLastNameOriginedOut,
     /**
      * The FirstLastNameOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameOut}
+     * @property {module:model/FirstLastNameOut}
      */
     FirstLastNameOut: FirstLastNameOut,
     /**
      * The FirstLastNamePhoneCodedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNamePhoneCodedOut}
+     * @property {module:model/FirstLastNamePhoneCodedOut}
      */
     FirstLastNamePhoneCodedOut: FirstLastNamePhoneCodedOut,
     /**
      * The FirstLastNamePhoneNumberGeoIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNamePhoneNumberGeoIn}
+     * @property {module:model/FirstLastNamePhoneNumberGeoIn}
      */
     FirstLastNamePhoneNumberGeoIn: FirstLastNamePhoneNumberGeoIn,
     /**
      * The FirstLastNamePhoneNumberIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNamePhoneNumberIn}
+     * @property {module:model/FirstLastNamePhoneNumberIn}
      */
     FirstLastNamePhoneNumberIn: FirstLastNamePhoneNumberIn,
     /**
      * The FirstLastNameUSRaceEthnicityOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/FirstLastNameUSRaceEthnicityOut}
+     * @property {module:model/FirstLastNameUSRaceEthnicityOut}
      */
     FirstLastNameUSRaceEthnicityOut: FirstLastNameUSRaceEthnicityOut,
     /**
      * The InlineObject model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/InlineObject}
+     * @property {module:model/InlineObject}
      */
     InlineObject: InlineObject,
     /**
      * The InvoiceItemOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/InvoiceItemOut}
+     * @property {module:model/InvoiceItemOut}
      */
     InvoiceItemOut: InvoiceItemOut,
     /**
      * The InvoiceOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/InvoiceOut}
+     * @property {module:model/InvoiceOut}
      */
     InvoiceOut: InvoiceOut,
     /**
      * The MatchPersonalFirstLastNameIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/MatchPersonalFirstLastNameIn}
+     * @property {module:model/MatchPersonalFirstLastNameIn}
      */
     MatchPersonalFirstLastNameIn: MatchPersonalFirstLastNameIn,
     /**
      * The NamSorCounterOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/NamSorCounterOut}
+     * @property {module:model/NamSorCounterOut}
      */
     NamSorCounterOut: NamSorCounterOut,
     /**
      * The NameMatchCandidateOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/NameMatchCandidateOut}
+     * @property {module:model/NameMatchCandidateOut}
      */
     NameMatchCandidateOut: NameMatchCandidateOut,
     /**
      * The NameMatchCandidatesOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/NameMatchCandidatesOut}
+     * @property {module:model/NameMatchCandidatesOut}
      */
     NameMatchCandidatesOut: NameMatchCandidatesOut,
     /**
      * The NameMatchedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/NameMatchedOut}
+     * @property {module:model/NameMatchedOut}
      */
     NameMatchedOut: NameMatchedOut,
     /**
      * The ParsedFullNameGeoIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/ParsedFullNameGeoIn}
+     * @property {module:model/ParsedFullNameGeoIn}
      */
     ParsedFullNameGeoIn: ParsedFullNameGeoIn,
     /**
      * The ParsedFullNameIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/ParsedFullNameIn}
+     * @property {module:model/ParsedFullNameIn}
      */
     ParsedFullNameIn: ParsedFullNameIn,
     /**
      * The PersonalNameGenderedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/PersonalNameGenderedOut}
+     * @property {module:model/PersonalNameGenderedOut}
      */
     PersonalNameGenderedOut: PersonalNameGenderedOut,
     /**
      * The PersonalNameGeoIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/PersonalNameGeoIn}
+     * @property {module:model/PersonalNameGeoIn}
      */
     PersonalNameGeoIn: PersonalNameGeoIn,
     /**
      * The PersonalNameGeoOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/PersonalNameGeoOut}
+     * @property {module:model/PersonalNameGeoOut}
      */
     PersonalNameGeoOut: PersonalNameGeoOut,
     /**
      * The PersonalNameIn model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/PersonalNameIn}
+     * @property {module:model/PersonalNameIn}
      */
     PersonalNameIn: PersonalNameIn,
     /**
      * The PersonalNameParsedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/PersonalNameParsedOut}
+     * @property {module:model/PersonalNameParsedOut}
      */
     PersonalNameParsedOut: PersonalNameParsedOut,
     /**
      * The ProperNounCategorizedOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/ProperNounCategorizedOut}
+     * @property {module:model/ProperNounCategorizedOut}
      */
     ProperNounCategorizedOut: ProperNounCategorizedOut,
     /**
      * The RomanizedNameOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/RomanizedNameOut}
+     * @property {module:model/RomanizedNameOut}
      */
     RomanizedNameOut: RomanizedNameOut,
     /**
      * The SoftwareVersionOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/SoftwareVersionOut}
+     * @property {module:model/SoftwareVersionOut}
      */
     SoftwareVersionOut: SoftwareVersionOut,
     /**
      * The SourceDetailedMetricsOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/SourceDetailedMetricsOut}
+     * @property {module:model/SourceDetailedMetricsOut}
      */
     SourceDetailedMetricsOut: SourceDetailedMetricsOut,
     /**
      * The SourceMetricsOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/SourceMetricsOut}
+     * @property {module:model/SourceMetricsOut}
      */
     SourceMetricsOut: SourceMetricsOut,
     /**
      * The StripeCardOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/StripeCardOut}
+     * @property {module:model/StripeCardOut}
      */
     StripeCardOut: StripeCardOut,
     /**
      * The StripeCustomerOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/StripeCustomerOut}
+     * @property {module:model/StripeCustomerOut}
      */
     StripeCustomerOut: StripeCustomerOut,
     /**
      * The SystemMetricsOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/SystemMetricsOut}
+     * @property {module:model/SystemMetricsOut}
      */
     SystemMetricsOut: SystemMetricsOut,
     /**
      * The UserInfoOut model constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.model/UserInfoOut}
+     * @property {module:model/UserInfoOut}
      */
     UserInfoOut: UserInfoOut,
     /**
      * The AdminApi service constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.api/AdminApi}
+     * @property {module:api/AdminApi}
      */
     AdminApi: AdminApi,
     /**
      * The ChineseApi service constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.api/ChineseApi}
+     * @property {module:api/ChineseApi}
      */
     ChineseApi: ChineseApi,
     /**
      * The GeneralApi service constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.api/GeneralApi}
+     * @property {module:api/GeneralApi}
      */
     GeneralApi: GeneralApi,
     /**
      * The JapaneseApi service constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.api/JapaneseApi}
+     * @property {module:api/JapaneseApi}
      */
     JapaneseApi: JapaneseApi,
     /**
      * The PersonalApi service constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.api/PersonalApi}
+     * @property {module:api/PersonalApi}
      */
     PersonalApi: PersonalApi,
     /**
      * The SocialApi service constructor.
-     * @property {module:com.namsor.sdk2.invoke/com.namsor.sdk2.api/SocialApi}
+     * @property {module:api/SocialApi}
      */
     SocialApi: SocialApi
   };
