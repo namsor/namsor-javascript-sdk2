@@ -3,7 +3,7 @@
   "version": "2.0.11",
   "description": "NamSor API v2 : enpoints to process personal names (gender, cultural origin or ethnicity) in all alphabets or languages.",
   "license": "AGPL-3.0-or-later",
-  "main": "src/index.js",
+  "main": "src/com.namsor.sdk2.invoke/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive"
   },
