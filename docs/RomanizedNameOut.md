@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**script** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
 **latinName** | **String** |  | [optional] 
 **originalName** | **String** |  | [optional] 
@@ -11,5 +12,6 @@ Name | Type | Description | Notes
 **sourceScript** | **String** |  | [optional] 
 **targetScript** | **String** |  | [optional] 
 **score** | **Number** |  | [optional] 
+**category** | **String** |  | [optional] 
 
 

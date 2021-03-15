@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**script** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
 **firstName** | **String** |  | [optional] 
 **lastName** | **String** |  | [optional] 
@@ -12,6 +13,7 @@ Name | Type | Description | Notes
 **raceEthnicitiesTop** | **[String]** | List &#39;race&#39;/ethnicities | [optional] 
 **probabilityCalibrated** | **Number** |  | [optional] 
 **probabilityAltCalibrated** | **Number** |  | [optional] 
+**category** | **String** |  | [optional] 
 
 
 <a name="RaceEthnicityAltEnum"></a>

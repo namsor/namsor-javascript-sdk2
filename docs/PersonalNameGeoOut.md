@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**script** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
 **name** | **String** |  | [optional] 
 **score** | **Number** |  | [optional] 
@@ -14,5 +15,6 @@ Name | Type | Description | Notes
 **countriesTop** | **[String]** | List countries (top 10) | [optional] 
 **probabilityCalibrated** | **Number** |  | [optional] 
 **probabilityAltCalibrated** | **Number** |  | [optional] 
+**category** | **String** |  | [optional] 
 
 

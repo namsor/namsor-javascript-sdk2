@@ -3,6 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**script** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
 **firstName** | **String** |  | [optional] 
 **lastName** | **String** |  | [optional] 
@@ -12,5 +13,6 @@ Name | Type | Description | Notes
 **lifted** | **Boolean** |  | [optional] 
 **countryIso2** | **String** |  | [optional] 
 **ethnicitiesTop** | **[String]** | List ethnicities (top 10) | [optional] 
+**category** | **String** |  | [optional] 
 
 
