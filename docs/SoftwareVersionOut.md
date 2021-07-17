@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**softwareNameAndVersion** | **String** |  | [optional] 
-**softwareVersion** | **[Number]** |  | [optional] 
+**softwareNameAndVersion** | **String** | The software version | [optional] 
+**softwareVersion** | **[Number]** | The software version major minor build | [optional] 
 
 

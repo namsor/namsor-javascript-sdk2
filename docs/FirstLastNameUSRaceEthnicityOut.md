@@ -5,15 +5,14 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **script** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
-**firstName** | **String** |  | [optional] 
-**lastName** | **String** |  | [optional] 
+**firstName** | **String** | The first name (also known as given name) | [optional] 
+**lastName** | **String** | The last name (also known as family name, or surname) | [optional] 
 **raceEthnicityAlt** | **String** | Second most likely US &#39;race&#39;/ethnicity | [optional] 
 **raceEthnicity** | **String** | Most likely US &#39;race&#39;/ethnicity | [optional] 
-**score** | **Number** | Compatibility to NamSor_v1 Origin score value | [optional] 
+**score** | **Number** | Higher score is better, but score is not normalized. Use calibratedProbability if available.  | [optional] 
 **raceEthnicitiesTop** | **[String]** | List &#39;race&#39;/ethnicities | [optional] 
-**probabilityCalibrated** | **Number** |  | [optional] 
-**probabilityAltCalibrated** | **Number** |  | [optional] 
-**category** | **String** |  | [optional] 
+**probabilityCalibrated** | **Number** | The calibrated probability for raceEthnicity to have been guessed correctly. | [optional] 
+**probabilityAltCalibrated** | **Number** | The calibrated probability for raceEthnicity OR raceEthnicityAlt to have been guessed correctly. | [optional] 
 
 
 <a name="RaceEthnicityAltEnum"></a>
@@ -27,6 +26,10 @@ Name | Type | Description | Notes
 * `A` (value: `"A"`)
 
 * `B_NL` (value: `"B_NL"`)
+
+* `AI_AN` (value: `"AI_AN"`)
+
+* `PI` (value: `"PI"`)
 
 
 
@@ -42,6 +45,10 @@ Name | Type | Description | Notes
 * `A` (value: `"A"`)
 
 * `B_NL` (value: `"B_NL"`)
+
+* `AI_AN` (value: `"AI_AN"`)
+
+* `PI` (value: `"PI"`)
 
 
 

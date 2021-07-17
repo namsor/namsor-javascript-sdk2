@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new NamSorApiV2.BatchFirstLastNameDiasporaedOut();
+    instance = new NamSorApiV2.APIUsageHistoryOut();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,16 +50,16 @@
       object[property] = value;
   }
 
-  describe('BatchFirstLastNameDiasporaedOut', function() {
-    it('should create an instance of BatchFirstLastNameDiasporaedOut', function() {
-      // uncomment below and update the code to test BatchFirstLastNameDiasporaedOut
-      //var instance = new NamSorApiV2.BatchFirstLastNameDiasporaedOut();
-      //expect(instance).to.be.a(NamSorApiV2.BatchFirstLastNameDiasporaedOut);
+  describe('APIUsageHistoryOut', function() {
+    it('should create an instance of APIUsageHistoryOut', function() {
+      // uncomment below and update the code to test APIUsageHistoryOut
+      //var instance = new NamSorApiV2.APIUsageHistoryOut();
+      //expect(instance).to.be.a(NamSorApiV2.APIUsageHistoryOut);
     });
 
-    it('should have the property personalNames (base name: "personalNames")', function() {
-      // uncomment below and update the code to test the property personalNames
-      //var instance = new NamSorApiV2.BatchFirstLastNameDiasporaedOut();
+    it('should have the property detailedUsage (base name: "detailedUsage")', function() {
+      // uncomment below and update the code to test the property detailedUsage
+      //var instance = new NamSorApiV2.APIUsageHistoryOut();
       //expect(instance).to.be();
     });
 

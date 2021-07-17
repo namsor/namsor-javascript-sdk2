@@ -17,31 +17,31 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/NameMatchedOut'], factory);
+    define(['ApiClient', 'model/APICounterV2Out'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./NameMatchedOut'));
+    module.exports = factory(require('../ApiClient'), require('./APICounterV2Out'));
   } else {
     // Browser globals (root is window)
     if (!root.NamSorApiV2) {
       root.NamSorApiV2 = {};
     }
-    root.NamSorApiV2.BatchNameMatchedOut = factory(root.NamSorApiV2.ApiClient, root.NamSorApiV2.NameMatchedOut);
+    root.NamSorApiV2.APIUsageHistoryOut = factory(root.NamSorApiV2.ApiClient, root.NamSorApiV2.APICounterV2Out);
   }
-}(this, function(ApiClient, NameMatchedOut) {
+}(this, function(ApiClient, APICounterV2Out) {
   'use strict';
 
 
 
   /**
-   * The BatchNameMatchedOut model module.
-   * @module model/BatchNameMatchedOut
+   * The APIUsageHistoryOut model module.
+   * @module model/APIUsageHistoryOut
    * @version 2.0.15
    */
 
   /**
-   * Constructs a new <code>BatchNameMatchedOut</code>.
-   * @alias module:model/BatchNameMatchedOut
+   * Constructs a new <code>APIUsageHistoryOut</code>.
+   * @alias module:model/APIUsageHistoryOut
    * @class
    */
   var exports = function() {
@@ -50,27 +50,27 @@
   };
 
   /**
-   * Constructs a <code>BatchNameMatchedOut</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>APIUsageHistoryOut</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/BatchNameMatchedOut} obj Optional instance to populate.
-   * @return {module:model/BatchNameMatchedOut} The populated <code>BatchNameMatchedOut</code> instance.
+   * @param {module:model/APIUsageHistoryOut} obj Optional instance to populate.
+   * @return {module:model/APIUsageHistoryOut} The populated <code>APIUsageHistoryOut</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('matchedNames')) {
-        obj['matchedNames'] = ApiClient.convertToType(data['matchedNames'], [NameMatchedOut]);
+      if (data.hasOwnProperty('detailedUsage')) {
+        obj['detailedUsage'] = ApiClient.convertToType(data['detailedUsage'], [APICounterV2Out]);
       }
     }
     return obj;
   }
 
   /**
-   * Classified matched names
-   * @member {Array.<module:model/NameMatchedOut>} matchedNames
+   * Detailed usage as reported by the deduplicating API counter.
+   * @member {Array.<module:model/APICounterV2Out>} detailedUsage
    */
-  exports.prototype['matchedNames'] = undefined;
+  exports.prototype['detailedUsage'] = undefined;
 
 
 

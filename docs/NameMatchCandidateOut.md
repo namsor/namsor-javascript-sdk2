@@ -3,9 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**candidateName** | **String** |  | [optional] 
-**probability** | **Number** |  | [optional] 
-**predScoreGivenName** | **Number** |  | [optional] 
-**predScoreFamilyName** | **Number** |  | [optional] 
+**candidateName** | **String** | The name matching candidate name | [optional] 
+**probability** | **Number** | The name matching estimated probability. | [optional] 
+**predScoreGivenName** | **Number** | The given name prediction score. | [optional] 
+**predScoreFamilyName** | **Number** | The family name prediction score. | [optional] 
 
 

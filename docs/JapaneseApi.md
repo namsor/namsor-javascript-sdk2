@@ -233,7 +233,7 @@ api_key.apiKey = 'YOUR API KEY';
 
 var apiInstance = new NamSorApiV2.JapaneseApi();
 var opts = {
-  'batchFirstLastNameIn': new NamSorApiV2.BatchFirstLastNameIn() // BatchFirstLastNameIn | A list of personal japanese names in LATIN, firstName = japaneseGivenName; lastName=japaneseSurname and known gender
+  'batchFirstLastNameGenderIn': new NamSorApiV2.BatchFirstLastNameGenderIn() // BatchFirstLastNameGenderIn | A list of personal japanese names in LATIN, firstName = japaneseGivenName; lastName=japaneseSurname and known gender
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -249,7 +249,7 @@ apiInstance.japaneseNameGenderKanjiCandidatesBatch(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **batchFirstLastNameIn** | [**BatchFirstLastNameIn**](BatchFirstLastNameIn.md)| A list of personal japanese names in LATIN, firstName &#x3D; japaneseGivenName; lastName&#x3D;japaneseSurname and known gender | [optional] 
+ **batchFirstLastNameGenderIn** | [**BatchFirstLastNameGenderIn**](BatchFirstLastNameGenderIn.md)| A list of personal japanese names in LATIN, firstName &#x3D; japaneseGivenName; lastName&#x3D;japaneseSurname and known gender | [optional] 
 
 ### Return type
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
 
 <a name="japaneseNameKanjiCandidates"></a>
 # **japaneseNameKanjiCandidates**
-> RomanizedNameOut japaneseNameKanjiCandidates(japaneseSurnameLatin, japaneseGivenNameLatin, knownGender)
+> NameMatchCandidatesOut japaneseNameKanjiCandidates(japaneseSurnameLatin, japaneseGivenNameLatin, knownGender)
 
 Identify japanese name candidates in KANJI, based on the romanized name ex. Yamamoto Sanae - and a known gender.
 
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RomanizedNameOut**](RomanizedNameOut.md)
+[**NameMatchCandidatesOut**](NameMatchCandidatesOut.md)
 
 ### Authorization
 
@@ -317,7 +317,7 @@ Name | Type | Description  | Notes
 
 <a name="japaneseNameKanjiCandidates1"></a>
 # **japaneseNameKanjiCandidates1**
-> RomanizedNameOut japaneseNameKanjiCandidates1(japaneseSurnameLatin, japaneseGivenNameLatin)
+> NameMatchCandidatesOut japaneseNameKanjiCandidates1(japaneseSurnameLatin, japaneseGivenNameLatin)
 
 Identify japanese name candidates in KANJI, based on the romanized name ex. Yamamoto Sanae
 
@@ -353,7 +353,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RomanizedNameOut**](RomanizedNameOut.md)
+[**NameMatchCandidatesOut**](NameMatchCandidatesOut.md)
 
 ### Authorization
 
@@ -415,7 +415,7 @@ Name | Type | Description  | Notes
 
 <a name="japaneseNameLatinCandidates"></a>
 # **japaneseNameLatinCandidates**
-> RomanizedNameOut japaneseNameLatinCandidates(japaneseSurnameKanji, japaneseGivenNameKanji)
+> NameMatchCandidatesOut japaneseNameLatinCandidates(japaneseSurnameKanji, japaneseGivenNameKanji)
 
 Romanize japanese name, based on the name in Kanji.
 
@@ -451,7 +451,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RomanizedNameOut**](RomanizedNameOut.md)
+[**NameMatchCandidatesOut**](NameMatchCandidatesOut.md)
 
 ### Authorization
 
@@ -513,7 +513,7 @@ Name | Type | Description  | Notes
 
 <a name="japaneseNameMatch"></a>
 # **japaneseNameMatch**
-> RomanizedNameOut japaneseNameMatch(japaneseSurnameLatin, japaneseGivenNameLatin, japaneseName)
+> NameMatchedOut japaneseNameMatch(japaneseSurnameLatin, japaneseGivenNameLatin, japaneseName)
 
 Return a score for matching Japanese name in KANJI ex. 山本 早苗 with a romanized name ex. Yamamoto Sanae
 
@@ -551,7 +551,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RomanizedNameOut**](RomanizedNameOut.md)
+[**NameMatchedOut**](NameMatchedOut.md)
 
 ### Authorization
 
@@ -564,7 +564,7 @@ Name | Type | Description  | Notes
 
 <a name="japaneseNameMatchBatch"></a>
 # **japaneseNameMatchBatch**
-> BatchNameMatchCandidatesOut japaneseNameMatchBatch(opts)
+> BatchNameMatchedOut japaneseNameMatchBatch(opts)
 
 Return a score for matching a list of Japanese names in KANJI ex. 山本 早苗 with romanized names ex. Yamamoto Sanae
 
@@ -580,7 +580,7 @@ api_key.apiKey = 'YOUR API KEY';
 
 var apiInstance = new NamSorApiV2.JapaneseApi();
 var opts = {
-  'batchFirstLastNameIn': new NamSorApiV2.BatchFirstLastNameIn() // BatchFirstLastNameIn | A list of personal Japanese names in LATIN, firstName = japaneseGivenName; lastName=japaneseSurname
+  'batchMatchPersonalFirstLastNameIn': new NamSorApiV2.BatchMatchPersonalFirstLastNameIn() // BatchMatchPersonalFirstLastNameIn | A list of personal Japanese names in LATIN, firstName = japaneseGivenName; lastName=japaneseSurname
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -596,11 +596,11 @@ apiInstance.japaneseNameMatchBatch(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **batchFirstLastNameIn** | [**BatchFirstLastNameIn**](BatchFirstLastNameIn.md)| A list of personal Japanese names in LATIN, firstName &#x3D; japaneseGivenName; lastName&#x3D;japaneseSurname | [optional] 
+ **batchMatchPersonalFirstLastNameIn** | [**BatchMatchPersonalFirstLastNameIn**](BatchMatchPersonalFirstLastNameIn.md)| A list of personal Japanese names in LATIN, firstName &#x3D; japaneseGivenName; lastName&#x3D;japaneseSurname | [optional] 
 
 ### Return type
 
-[**BatchNameMatchCandidatesOut**](BatchNameMatchCandidatesOut.md)
+[**BatchNameMatchedOut**](BatchNameMatchedOut.md)
 
 ### Authorization
 
@@ -613,7 +613,7 @@ Name | Type | Description  | Notes
 
 <a name="japaneseNameMatchFeedbackLoop"></a>
 # **japaneseNameMatchFeedbackLoop**
-> RomanizedNameOut japaneseNameMatchFeedbackLoop(japaneseSurnameLatin, japaneseGivenNameLatin, japaneseName)
+> FeedbackLoopOut japaneseNameMatchFeedbackLoop(japaneseSurnameLatin, japaneseGivenNameLatin, japaneseName)
 
 [CREDITS 1 UNIT] Feedback loop to better perform matching Japanese name in KANJI ex. 山本 早苗 with a romanized name ex. Yamamoto Sanae
 
@@ -651,7 +651,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RomanizedNameOut**](RomanizedNameOut.md)
+[**FeedbackLoopOut**](FeedbackLoopOut.md)
 
 ### Authorization
 

@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**personalNames** | [**[PersonalNameGenderedOut]**](PersonalNameGenderedOut.md) |  | [optional] 
+**personalNames** | [**[PersonalNameGenderedOut]**](PersonalNameGenderedOut.md) | Classified genderized names | [optional] 
 
 

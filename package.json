@@ -1,7 +1,7 @@
 {
   "name": "nam_sor_api_v2",
-  "version": "2.0.13",
-  "description": "NamSor_API_v2__enpoints_to_process_personal_names__gender_cultural_origin_or_ethnicity_in_all_alphabets_or_languages__Use_GET_methods_for_small_tests_but_prefer_POST_methods_for_higher_throughput__batch_processing_of_up_to_100_names_at_a_time__Need_something_you_cant_find_here_We_have_many_more_features_coming_soon__Let_us_know_well_do_our_best_to_add_it_",
+  "version": "2.0.15",
+  "description": "NamSor_API_v2__enpoints_to_process_personal_names__gender_cultural_origin_or_ethnicity_in_all_alphabets_or_languages__By_default_enpoints_use_1_unit_per_name__ex__Gender_but_Ethnicity_classification_uses_10_to_20_units_per_name_depending_on_taxonomy__Use_GET_methods_for_small_tests_but_prefer_POST_methods_for_higher_throughput__batch_processing_of_up_to_100_names_at_a_time__Need_something_you_cant_find_here_We_have_many_more_features_coming_soon__Let_us_know_well_do_our_best_to_add_it_",
   "license": "NamSorAPI_Lic_v0.0.7",
   "main": "src/index.js",
   "scripts": {

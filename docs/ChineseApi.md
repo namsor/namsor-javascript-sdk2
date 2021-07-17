@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 <a name="chineseNameCandidates"></a>
 # **chineseNameCandidates**
-> RomanizedNameOut chineseNameCandidates(chineseSurnameLatin, chineseGivenNameLatin)
+> NameMatchCandidatesOut chineseNameCandidates(chineseSurnameLatin, chineseGivenNameLatin)
 
 Identify Chinese name candidates, based on the romanized name ex. Wang Xiaoming
 
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RomanizedNameOut**](RomanizedNameOut.md)
+[**NameMatchCandidatesOut**](NameMatchCandidatesOut.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ api_key.apiKey = 'YOUR API KEY';
 
 var apiInstance = new NamSorApiV2.ChineseApi();
 var opts = {
-  'batchFirstLastNameIn': new NamSorApiV2.BatchFirstLastNameIn() // BatchFirstLastNameIn | A list of personal Chinese names in LATIN, firstName = chineseGivenName; lastName=chineseSurname
+  'batchFirstLastNameGenderIn': new NamSorApiV2.BatchFirstLastNameGenderIn() // BatchFirstLastNameGenderIn | A list of personal Chinese names in LATIN, firstName = chineseGivenName; lastName=chineseSurname
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -152,7 +152,7 @@ apiInstance.chineseNameCandidatesGenderBatch(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **batchFirstLastNameIn** | [**BatchFirstLastNameIn**](BatchFirstLastNameIn.md)| A list of personal Chinese names in LATIN, firstName &#x3D; chineseGivenName; lastName&#x3D;chineseSurname | [optional] 
+ **batchFirstLastNameGenderIn** | [**BatchFirstLastNameGenderIn**](BatchFirstLastNameGenderIn.md)| A list of personal Chinese names in LATIN, firstName &#x3D; chineseGivenName; lastName&#x3D;chineseSurname | [optional] 
 
 ### Return type
 
@@ -169,7 +169,7 @@ Name | Type | Description  | Notes
 
 <a name="chineseNameGenderCandidates"></a>
 # **chineseNameGenderCandidates**
-> RomanizedNameOut chineseNameGenderCandidates(chineseSurnameLatin, chineseGivenNameLatin, knownGender)
+> NameMatchCandidatesOut chineseNameGenderCandidates(chineseSurnameLatin, chineseGivenNameLatin, knownGender)
 
 Identify Chinese name candidates, based on the romanized name ex. Wang Xiaoming - having a known gender (&#39;male&#39; or &#39;female&#39;)
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RomanizedNameOut**](RomanizedNameOut.md)
+[**NameMatchCandidatesOut**](NameMatchCandidatesOut.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 
 <a name="chineseNameMatch"></a>
 # **chineseNameMatch**
-> RomanizedNameOut chineseNameMatch(chineseSurnameLatin, chineseGivenNameLatin, chineseName)
+> NameMatchedOut chineseNameMatch(chineseSurnameLatin, chineseGivenNameLatin, chineseName)
 
 Return a score for matching Chinese name ex. 王晓明 with a romanized name ex. Wang Xiaoming
 
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**RomanizedNameOut**](RomanizedNameOut.md)
+[**NameMatchedOut**](NameMatchedOut.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 
 <a name="chineseNameMatchBatch"></a>
 # **chineseNameMatchBatch**
-> BatchNameMatchCandidatesOut chineseNameMatchBatch(opts)
+> BatchNameMatchedOut chineseNameMatchBatch(opts)
 
 Identify Chinese name candidates, based on the romanized name (firstName &#x3D; chineseGivenName; lastName&#x3D;chineseSurname), ex. Wang Xiaoming
 
@@ -287,7 +287,7 @@ api_key.apiKey = 'YOUR API KEY';
 
 var apiInstance = new NamSorApiV2.ChineseApi();
 var opts = {
-  'batchFirstLastNameIn': new NamSorApiV2.BatchFirstLastNameIn() // BatchFirstLastNameIn | A list of personal Chinese names in LATIN, firstName = chineseGivenName; lastName=chineseSurname
+  'batchMatchPersonalFirstLastNameIn': new NamSorApiV2.BatchMatchPersonalFirstLastNameIn() // BatchMatchPersonalFirstLastNameIn | A list of personal Chinese names in LATIN, firstName = chineseGivenName; lastName=chineseSurname
 };
 var callback = function(error, data, response) {
   if (error) {
@@ -303,11 +303,11 @@ apiInstance.chineseNameMatchBatch(opts, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **batchFirstLastNameIn** | [**BatchFirstLastNameIn**](BatchFirstLastNameIn.md)| A list of personal Chinese names in LATIN, firstName &#x3D; chineseGivenName; lastName&#x3D;chineseSurname | [optional] 
+ **batchMatchPersonalFirstLastNameIn** | [**BatchMatchPersonalFirstLastNameIn**](BatchMatchPersonalFirstLastNameIn.md)| A list of personal Chinese names in LATIN, firstName &#x3D; chineseGivenName; lastName&#x3D;chineseSurname | [optional] 
 
 ### Return type
 
-[**BatchNameMatchCandidatesOut**](BatchNameMatchCandidatesOut.md)
+[**BatchNameMatchedOut**](BatchNameMatchedOut.md)
 
 ### Authorization
 

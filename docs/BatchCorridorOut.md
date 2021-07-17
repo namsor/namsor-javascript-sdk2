@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**corridorFromTo** | [**[CorridorOut]**](CorridorOut.md) |  | [optional] 
+**corridorFromTo** | [**[CorridorOut]**](CorridorOut.md) | Classified corridors | [optional] 
 
 
